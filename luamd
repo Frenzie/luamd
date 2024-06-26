@@ -65,7 +65,7 @@ local md_options = {
     prependHead = "<!DOCTYPE html><html>",
     appendTail = "</html>",
     tag = "body",
-    insertHead = string.format("<head><title>%s</title></head>", file),
+    insertHead = string.format("<head><title>%s</title></head>", ARGV[argidx] or ""),
 }
 if ARGV[argidx] and ARGV[argidx] ~= "" then
     local file = nil
